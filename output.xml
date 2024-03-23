@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-20T13:42:49.487223" rpa="false" schemaversion="5">
+<suite id="s1" name="TC" source="C:\Users\Sreenivas Sreeni\PycharmProjects\APIAutomation\VideoGameAPI\TC.robot">
+<test id="s1-t1" name="TC1:Returns all the videos games(GET)" line="9">
+<kw name="create session session">
+<msg time="2024-01-20T13:42:49.653782" level="FAIL">No keyword with name 'create session session' found. Did you try using keyword 'RequestsLibrary.Create Session' and forgot to use enough whitespace between keyword and arguments?</msg>
+<arg>${base_url}</arg>
+<status status="FAIL" start="2024-01-20T13:42:49.653782" elapsed="0.000000">No keyword with name 'create session session' found. Did you try using keyword 'RequestsLibrary.Create Session' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="get request session">
+<var>${response}</var>
+<arg>/app/videogames</arg>
+<status status="NOT RUN" start="2024-01-20T13:42:49.655774" elapsed="0.000000"/>
+</kw>
+<kw name="log to console ${response.status_code}">
+<status status="NOT RUN" start="2024-01-20T13:42:49.657727" elapsed="0.000000"/>
+</kw>
+<kw name="log to console ${response.content}">
+<status status="NOT RUN" start="2024-01-20T13:42:49.659762" elapsed="0.000000"/>
+</kw>
+<kw name="${status_code} = convert to string">
+<arg>${response.status_code}</arg>
+<status status="NOT RUN" start="2024-01-20T13:42:49.660759" elapsed="0.000997"/>
+</kw>
+<kw name="should be equal ${status_code}">
+<arg>200</arg>
+<status status="NOT RUN" start="2024-01-20T13:42:49.662754" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-01-20T13:42:49.651784" elapsed="0.012052">No keyword with name 'create session session' found. Did you try using keyword 'RequestsLibrary.Create Session' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<status status="FAIL" start="2024-01-20T13:42:49.489178" elapsed="0.176599"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC">TC</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
